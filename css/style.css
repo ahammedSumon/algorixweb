@@ -507,6 +507,29 @@ h6,
     color: #FFFFFF;
     background: var(--primary);
 }
+.team-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap;
+    scroll-behavior: smooth; /* Adds smooth scrolling */
+}
+
+.team-item {
+    flex: 0 0 auto; /* Prevent shrinking, allow scrolling */
+    margin-right: 15px; /* Adds spacing between cards */
+    min-width: 300px; /* Adjust the card width as needed */
+    max-width: 300px;
+}
+
+.team-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on WebKit browsers */
+}
+
+.team-container {
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
 
 
 /*** Footer ***/
